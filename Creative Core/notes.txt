@@ -1,0 +1,70 @@
+A shader is a script that applies the properties contained in a material to render the meshes of your 3D objects to the 2D image on your screen. Each shader is written for a specific render pipeline. 
+
+Fragment shading, also known as pixel shading, is the shading that represents mesh surfaces to produce the color of each pixel in the 2D image.
+
+Vertex shading operates on the vertices of the mesh, typically changing their locations to make the surface move or transform.
+
+With Physically Based Rendering (PBR), the properties of lights and surfaces stay separate. Lights are defined in terms of their brightness, color, and range. Surfaces are defined, using materials, in terms of color, reflectivity, and other real-world properties that affect how light behaves on them. Then, the shader calculates the quality of light that bounces off surfaces based on the lights, surfaces, and 3D geometry of the scene, among other factors.
+
+With non-Physically Based Rendering, the rendered colors, shadows, and reflections are either approximated without the science of PBR or just not rendered. With a non-PBR shader, a red material might render as a flat red color or with simple reflections and shadows. 
+
+It is not common practice to change the shader of a material that is already created, as you’re about to do in this demonstration, because materials are based on the properties of a particular shader. Typically, you’ll select a shader first and then configure materials for that shader.
+
+Lit shaders respond to the light in the scene, and unlit shaders don’t. 
+
+Shaders and materials work together as a team — the shader defines what a surface can look like, while the material defines what it does look like.
+
+Automatic material upgrade for URP - Window > Rendering > Render Pipeline Converter.
+
+You can also upgrade a single material.  Select the material in the Project window, and then go to the main menu and select Edit > Rendering > Materials > Convert Selected Built-in Materials to URP.
+
+t:Material appears in the search box of the Project window. The search using t: denotes the type of asset. (You could use this to search for all scripts in your project by typing in t:Script, or t:material red to narrow search).
+
+When light comes in contact with any object, it can do one of three things: bounce off of it, which is known as reflection; pass through it, if the object is transparent or translucent; or be absorbed by it.
+
+There are two ways that light reflects from an object: there are specular reflections and diffuse reflections. A specular reflection is the direct reflection that is most visible on shiny objects. In the example image below, the specular reflection is white, which indicates that the light source is white. Other light penetrates the surface, and passes through or bounces around the outer layers of the apple. Some of this light is absorbed and some bounces out. The light that escapes is the diffuse reflection. The diffuse reflection of an object determines its visible color. On the apple, the non-red light is absorbed, and the red light is reflected to our eyes.
+
+The term albedo describes the measurement of diffuse reflection.It is typically specified as a regular color, expressed as three values for red, green, and blue (RGB values). RGB values can be translated to values for hue, saturation, and luminosity (brightness). The luminosity of the albedo color corresponds to the amount of diffuse reflection, and the hue and saturation describe the quality of light that escapes from the surface.
+
+The property of a surface that makes it look like metal is called specularity. 
+
+Two types of reflected light: diffuse, with the Base Map, and specular with the Specular Map.
+
+Unity provides two ways to make objects look metallic. The Specular workflow, is the more scientific of the two. In the Specular workflow, as the specular value increases (approaching white), the amount of the base color (diffuse color) is ignored. The Metallic workflow is simpler, but doesn’t strictly follow the rules of physical light. The base map color in the Metallic workflow remains visible in objects with a high Metallic setting.
+
+Smoothness, also called gloss or glossiness, brings the specular reflection into focus. From a smooth surface, light reflects in a uniform way so that you can see the shape of the light source in the reflection. Smoothness increases the specular reflection, but it’s important not to confuse the two. High specularity makes an object look like metal. A surface can be very smooth, like our polished red apple, but still not look like metal.
+
+
+Maps are 2D images that wrap around a GameObject like a sheet to set the color, specularity or metalness, physical texture, and other properties across the mesh. The image files containing maps are called textures. Also, regular 2D images can become textures. You can even take pictures of surfaces in the real world to build your own textures.
+
+Textures are regular image files in formats you might be familiar with, such as BMP, TIF, PNG, and JPG. 
+The data in image files is organized into channels. Black and white images, also known as grayscale images, have just one channel to indicate the shade of gray in each pixel. Color images require three channels, red, green, and blue (RGB), which combine to create the colors you see on your computer display.  
+Some image file formats have four channels: red, green, blue, and alpha (RGBA). The alpha channel typically contains transparency data.
+
+Normals are values in the mesh data that define the direction each vertex is facing. A normal map sets these values over an entire surface, which directs the shader to create the illusion that fragments (pixels) on the surface are facing different directions. Height maps indicate the relative height of each pixel from the mesh. Normal and height maps can add realistic physical details to your surfaces without using much computing power. Frequently, normal maps are used without height maps.
+
+Like base maps and specular/metallic maps, normal maps are created in 3D modeling or painting software. A normal map is similar to a base map, except that the red, green, and blue values indicate the direction of the normal relative to the mesh surface. Normal maps are mostly cyan and purple because the directions are expressed using higher values in the blue channel.
+
+Occlusion, in 3D graphics, is the blockage of light by an object. A crack in a sidewalk and the thin dark shadow line between the fingers of a closed fist are examples of occlusion.
+Even in PBR, ambient light can reflect in odd ways where it should be occluded. An occlusion map adds shadows to these occluded areas.
+
+Shader Graph allows you to create specialized shaders without the need to write code. In particular, you can combine textures and make them move in a fragment shader or even change the positions of vertices in a vertex shader. Professional technical artists create custom shaders to implement specialized artistic styles and to create complex substances like flowing lava, storm clouds, and vegetation. Shader Graph, as its name implies, helps you to build shaders using flowchart-like graphs.
+
+The basic shimmer is made with a procedural noise map. Procedural means that the texture is created by some formula or algorithm, not from an image or other physical source.
+
+A still life composition is a work of art depicting a collection of objects. Typically they are inanimate (that is, not living, or still). 
+
+When a material is built for a shader of a different render pipeline than the current project, it is bright magenta (pink) to alert you.
+
+LIGHT
+
+All light needs a source — something that emits it, like the sun or a light bulb. Light is energy that travels from that source in straight lines in the form of waves. 
+There are three key properties of that source that impact the light:
+Its shape will determine the direction in which the light waves are emitted.
+Its size will determine the area that the light impacts.
+Its strength (or intensity) will determine how far those light waves can travel and how bright it is.
+
+Direct light is light that is emitted, hits a surface once, and then is reflected directly into a sensor. 
+Indirect light is all the other light that ends up reflected into a sensor, like light that hits surfaces several times and light from the sky when you’re not looking at the sun directly.
+
+There are two different global illumination systems in Unity: the Baked Global Illumination system and the Realtime Global Illumination system.
