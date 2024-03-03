@@ -1,0 +1,35 @@
+Level 1 Code Comprehension
+Interpret simple code
+Improve simple code using the features of an IDE
+
+Level 1 Application Scripting
+Use common logic structures to control the execution of code.
+Write code that utilizes the various Unity APIs
+Implement appropriate data types
+Write code that integrates into an existing system
+Implement a code style that is efficient and easy to read
+Prototype new concepts
+
+Level 1 Debugging
+Diagnose and fix code that compiles, but fails to perform as expected
+Diagnose and fix common compilation errors
+Diagnose and fix compilation errors related to Unity’s Scripting API
+Diagnose and fix the cause of an exception
+
+Level 2 Application scripting
+Create the scene flow in an application state
+Implement data persistence across scenes and user sessions
+
+Level 1 Version control
+Maintain a project by correctly implementing version control
+Implement best practices of version control using Unity Collaborate
+
+Level 1 Code optimization
+Maximize code efficiency by correctly executing coding best practices
+Debug performance issues
+
+Level 2 Programming theory
+Analyze the principal pillars of object-oriented programming
+Simplify code and make it reusable by correctly implementing the principles of inheritance and polymorphism
+Make code more secure and usable by correctly implementing the principles of abstraction and encapsulation, including the use of interfaces
+Write efficient, organized, and comprehensible code by correctly implementing the principles of object-oriented programming
