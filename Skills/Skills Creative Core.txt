@@ -1,0 +1,84 @@
+Beginner Materials
+  Decide the best approach for creating materials for the URP/Lit shader on 3D GameObjects, given project requirements
+  Create materials for the URP/Lit Shader on a 3D GameObject
+  Simulate common substances with physically-based materials
+  Synthesize your new shaders and materials skills in response to project requirements
+Beginner Shader scripting
+  Create a simple shader and material using Shader Graph
+Beginner Shaders
+  Decide among common shaders to use for a given project
+Beginner Lighting
+  Implement appropriate lighting in a scene in a manner that will simulate the real-world behavior of light
+  Decide the appropriate lighting system in order to achieve common outcomes in a Universal Render Pipeline (URP) project
+  Configure ambient (diffuse environmental) lighting in order to convey mood or enhance realism
+  Generate a lightmap in order to implement baked lighting in a scene
+  Configure light sources and shadows in order to functionally light a scene
+  Configure Light Probes in order to increase the realism of baked lighting
+  Configure Reflection Probes in order to achieve accurate reflections
+  Troubleshoot common lighting errors in order to appropriately light a scene
+  Synthesize your new lighting skills in response to project requirements
+Beginner Animation Systems
+  Describe key components of an animator controller
+  Describe the relationship between different animation components
+  Synthesize your new animation skills in response to project requirements
+Beginner 3D Animation (Native Unity)
+  Create simple keyframed 3D animation sequences
+Beginner 3D Animation (Imported)
+  Configure Animation Clips imported from digital content creation (DCC) software or the Asset Store for use in a project
+  Configure a humanoid rig for use with the Humanoid Animation system
+Beginner Particles and Visual Effects
+  Decide whether to use Unity's Particle Systems or VFX Graph in order to produce an effect in your scene
+  Produce environmental and burst effects by configuring Unity's Particle System object
+  Interpret a simple VFX graph
+  Synthesize your new VFX skills in response to project requirements
+Beginner Unity Cameras
+  Decide which Camera setup to use, given a project’s requirements
+  Configure a single Unity Camera in a 2D or 3D scene
+  Synthesize your new camera skills in response to project requirements
+Beginner Post-Processing
+  Evaluate whether post-processing is an appropriate tool for a given goal
+  Implement a particular visual style in a project by configuring a post-processing profile
+  Synthesize your new post-processing skills in response to project requirements
+Beginner Audio Design Principles
+  Implement audio in Unity
+  Create interactive experiences by synthesizing audio experience design principles
+  Solve accessibility challenges in an audio design
+Beginner Audio Implementation
+  Produce customized results by correctly configuring audio in a scene
+  Refine existing audio in a Unity project
+  Synthesize your new audio skills in response to project requirements
+Beginner User Interface
+  Decide on a user interface approach for a project
+  Create and configure visual UI components in a manner that will respond appropriately to different screen sizes and resolutions
+  Create and configure interactive UI components such as buttons, toggles, and sliders, in order to implement simple UI functionality
+Beginner Prototyping
+  Determine the appropriate prototyping approach for a specific project
+  Decide the critical project features required in order to create a functional prototype
+  Create a functional prototype in Unity
+  Integrate external assets and tools into your prototype
+  Refine a prototype environment using ProBuilder
+  Refine a prototype environment using Terrain
+  Test a basic experience prototype
+  Synthesize your new prototyping skills in response to project requirements
+Beginner Job preparation
+  Prepare yourself for a freelance job search
+  Refine your job search priorities and goals
+  Practice continuous personal and professional growth
+Absolute Beginner Design process
+  Implement an iterative design process
+  Coordinate a user feedback and testing session
+  Practice putting the user first
+Absolute Beginner Project Management
+  Plan projects in the real-time development cycle
+  Manage projects in the real-time development cycle
+Beginner Render Pipelines
+  Choose an appropriate render pipeline for a project, given certain requirements
+  Explain the basic concepts of real-time graphics rendering
+  Given a scenario, determine the appropriate rendering methods that should be used
+Absolute Beginner Digital Citizenship
+  Engage in digital citizenship best practices
+  Act in compliance with relevant intellectual property laws
+Absolute Beginner Research
+  Conduct research using online technical documentation
+Beginner Critical Thinking
+  Conduct critical evaluation in decision making for creative projects
